@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+  runApp(MaterialApp(
+    // home: Text('Hello G'),// specifies what is going to be displayed on the home screen
+    home: Scaffold(
+        // this a widget that specifies the base layout of our app
+        appBar: AppBar(
+          //appBar property specifies how our app bar is going to look like, it takes an AppBar widget
+          title: Text("my first app"),
+          centerTitle: true,
+            backgroundColor: Colors.blueAccent,
         ),
-      ),
-    );
-  }
+        body: Center(
+          child: Text("hello g"),
+        ),
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          
+        },
+          child: Text("Click"),
+        ),),
+  ));
 }
