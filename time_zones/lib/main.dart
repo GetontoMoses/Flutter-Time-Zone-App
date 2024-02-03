@@ -3,7 +3,16 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     // specifies what is going to be displayed on the home screen
-    home: Scaffold(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override // overide the one defined in the stateless widget
+  Widget build(BuildContext context) {
+    return Scaffold(
       // this a widget that specifies the base layout of our app
       appBar: AppBar(
         //appBar property specifies how our app bar is going to look like, it takes an AppBar widget
@@ -21,7 +30,7 @@ void main() {
       ),
       body: Center(
         child: Text(
-          "hello g",
+          "hello g.More",
           style: TextStyle(
               fontSize: 15.0,
               fontWeight: FontWeight.bold,
@@ -33,6 +42,6 @@ void main() {
         child: Text("Click"),
         backgroundColor: Color.fromARGB(255, 3, 184, 197),
       ),
-    ),
-  ));
+    );
+  }
 }
