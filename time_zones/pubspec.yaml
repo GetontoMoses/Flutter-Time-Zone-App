@@ -18,10 +18,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-fonts:
-  - family: ProtestRiot
-    fonts:
-      - asset: fonts/ProtestRiot-Regular.ttf
-  - family: Trajan Pro
-    fonts:
-      - asset: fonts/TrajanPro.ttf
+  fonts:
+    - family: ProtestRiot
+      fonts:
+        - asset: fonts/ProtestRiot-Regular.ttf
