@@ -28,12 +28,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
-      body: Container(
-        padding: EdgeInsets.all(20.0),
-        color: Colors.grey[350],
-        child: Text("Hello"),
-        margin: EdgeInsets.all(30.0),
-      ),
+      body: Padding(
+        padding: EdgeInsets.all(90.0),
+        child: Text("data"),
+      ),//cannot apply color and margin to the padding widget
+      // Container(
+      //   padding: EdgeInsets.all(20.0),
+      //   color: Colors.grey[350],
+      //   child: Text("Hello"),
+      //   margin: EdgeInsets.all(30.0),
+      // ),
       // Center(
       //   child: IconButton(onPressed: () {}, icon: Icon(Icons.alternate_email)),
       // ),
