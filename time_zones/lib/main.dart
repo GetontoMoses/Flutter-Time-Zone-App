@@ -29,12 +29,12 @@ class Home extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
       body: Center(
-          child: ElevatedButton(
+          child: ElevatedButton.icon(
         onPressed: () {
-          print("you clicked me");
+          print("object");
         },
-        child: Text("Click Me",
-            style: TextStyle(color: Colors.black, fontFamily: "ProtestRiot")),
+        icon: Icon(Icons.mail),
+        label: Text("Mail me"),
       ))
       //Image(image: AssetImage('assets/MistyTown.jpeg')),
       //Text(
