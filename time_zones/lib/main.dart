@@ -29,13 +29,15 @@ class Home extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
       body: Center(
-          child: ElevatedButton.icon(
-        onPressed: () {
-          print("object");
-        },
-        icon: Icon(Icons.mail),
-        label: Text("Mail me"),
-      ))
+        child: IconButton(onPressed: () {}, icon: Icon(Icons.alternate_email)),
+      ),
+      //     child: ElevatedButton.icon(
+      //   onPressed: () {
+      //     print("object");
+      //   },
+      //   icon: Icon(Icons.mail),
+      //   label: Text("Mail me"),
+      // ))
       //Image(image: AssetImage('assets/MistyTown.jpeg')),
       //Text(
       //   "hello g.More",
@@ -45,7 +47,7 @@ class Home extends StatelessWidget {
       //       fontFamily: "ProtestRiot"),
       // ),
       //)
-      ,
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
