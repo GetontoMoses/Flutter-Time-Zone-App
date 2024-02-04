@@ -22,3 +22,6 @@ flutter:
     - family: ProtestRiot
       fonts:
         - asset: fonts/ProtestRiot-Regular.ttf
+  
+  assets:
+    - assets/
