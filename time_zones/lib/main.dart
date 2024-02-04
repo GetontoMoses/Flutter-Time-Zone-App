@@ -29,19 +29,23 @@ class Home extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
       body: Center(
-          child: Icon(
-        Icons.airport_shuttle,
-        color: Color.fromARGB(255, 11, 138, 193),
-        size: 60.0,
-      )
-          //Image(image: AssetImage('assets/MistyTown.jpeg')), //Text(
-          //   "hello g.More",
-          //   style: TextStyle(
-          //       fontSize: 15.0,
-          //       fontWeight: FontWeight.bold,
-          //       fontFamily: "ProtestRiot"),
-          // ),
-          ),
+          child: ElevatedButton(
+        onPressed: () {
+          print("you clicked me");
+        },
+        child: Text("Click Me",
+            style: TextStyle(color: Colors.black, fontFamily: "ProtestRiot")),
+      ))
+      //Image(image: AssetImage('assets/MistyTown.jpeg')),
+      //Text(
+      //   "hello g.More",
+      //   style: TextStyle(
+      //       fontSize: 15.0,
+      //       fontWeight: FontWeight.bold,
+      //       fontFamily: "ProtestRiot"),
+      // ),
+      //)
+      ,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
