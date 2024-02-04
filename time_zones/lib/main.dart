@@ -29,13 +29,13 @@ class Home extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
       body: Center(
-        child: Text(
-          "hello g.More",
-          style: TextStyle(
-              fontSize: 15.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: "ProtestRiot"),
-        ),
+        child: Image(image: AssetImage('assets/why.jpeg')), //Text(
+        //   "hello g.More",
+        //   style: TextStyle(
+        //       fontSize: 15.0,
+        //       fontWeight: FontWeight.bold,
+        //       fontFamily: "ProtestRiot"),
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
