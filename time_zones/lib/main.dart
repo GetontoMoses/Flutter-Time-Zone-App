@@ -28,28 +28,59 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Row(
         children: [
-          Row(children: [Text("Hello,"), Text("World")]),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.lightBlue,
-            child: Text("ONE"),
+          Expanded(
+            child: Image.asset("assets/MistyTown.jpeg"),
+            flex: 4,
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Color.fromARGB(255, 25, 212, 171),
-            child: Text("TWO"),
+          Expanded(
+            flex: 3,
+            child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amber,
+                child: Text("1")),
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Color.fromARGB(255, 223, 253, 89),
-            child: Text("THREE"),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Color.fromARGB(255, 105, 121, 225),
+              child: Text("2"),
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Color.fromARGB(255, 45, 246, 112),
+              child: Text("3"),
+            ),
           )
         ],
       ),
+      // Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: [
+      //     Row(children: [Text("Hello,"), Text("World")]),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Colors.lightBlue,
+      //       child: Text("ONE"),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Color.fromARGB(255, 25, 212, 171),
+      //       child: Text("TWO"),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Color.fromARGB(255, 223, 253, 89),
+      //       child: Text("THREE"),
+      //     )
+      //   ],
+      // ),
       // Row(
       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,//controls alignment along the row--->
       //   children: [
