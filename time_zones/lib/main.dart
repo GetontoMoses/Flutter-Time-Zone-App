@@ -28,10 +28,22 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(90.0),
-        child: Text("data"),
-      ),//cannot apply color and margin to the padding widget
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//controls alignment along the row--->
+        children: [
+          Text("Hello World"),
+          ElevatedButton(onPressed: () {}, child: Text("Click")),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text("Inside container"),
+          )
+        ],
+      ),
+      // Padding(
+      //   padding: EdgeInsets.all(90.0),
+      //   child: Text("data"),
+      //),//cannot apply color and margin to the padding widget
       // Container(
       //   padding: EdgeInsets.all(20.0),
       //   color: Colors.grey[350],
