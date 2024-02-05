@@ -28,18 +28,40 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 27, 188, 161),
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//controls alignment along the row--->
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text("Hello World"),
-          ElevatedButton(onPressed: () {}, child: Text("Click")),
+          Row(children: [Text("Hello,"), Text("World")]),
           Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text("Inside container"),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.lightBlue,
+            child: Text("ONE"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Color.fromARGB(255, 25, 212, 171),
+            child: Text("TWO"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Color.fromARGB(255, 223, 253, 89),
+            child: Text("THREE"),
           )
         ],
       ),
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,//controls alignment along the row--->
+      //   children: [
+      //     Text("Hello World"),
+      //     ElevatedButton(onPressed: () {}, child: Text("Click")),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(30.0),
+      //       child: Text("Inside container"),
+      //     )
+      //   ],
+      // ),
       // Padding(
       //   padding: EdgeInsets.all(90.0),
       //   child: Text("data"),
